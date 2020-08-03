@@ -403,8 +403,6 @@ class Board():
 					else:
 						defrealm = realm
 				conflicts.append({'color':color,'attacker':(belligerents[0],attrealm),'defender':(belligerents[1],defrealm)})
-			else:
-				return False
 		self.goThroughConflicts(conflicts, active_player)
 		return True
 				
