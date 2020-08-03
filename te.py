@@ -578,7 +578,7 @@ class Board():
 					input(f'{self.players[kingdom.leaders[color]].faction} received 1 {color} point for tile.')
 				elif kingdom.leaders['black']:
 					self.players[kingdom.leaders['black']].points[color] += 1
-					input(f'{self.players[kingdom.leaders[color]].faction} received 1 {color} point for tile.')
+					input(f'{self.players[kingdom.leaders['black']].faction} received 1 {color} point for tile.')
 				break
 
 	def gameSetup(self):
@@ -702,8 +702,6 @@ class Board():
 		
 
 
-
-
 if __name__ == '__main__':
 	os.system('mode con lines=40')
 	os.system(f'title Tigris ^& Euphrates v{gameversion} by Bernardo Tonasse')
@@ -711,13 +709,4 @@ if __name__ == '__main__':
 	theBoard = Board()
 	theBoard.gameSetup()
 	theBoard.turnLoop()
-	
-
-
-
-
-	
-	
-	
-
 	
