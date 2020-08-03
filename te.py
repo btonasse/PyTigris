@@ -578,7 +578,7 @@ class Board():
 					input(f'{self.players[kingdom.leaders[color]].faction} received 1 {color} point for tile.')
 				elif kingdom.leaders['black']:
 					self.players[kingdom.leaders['black']].points[color] += 1
-					input(f'{self.players[kingdom.leaders['black']].faction} received 1 {color} point for tile.')
+					input(f"{self.players[kingdom.leaders['black']].faction} received 1 {color} point for tile.")
 				break
 
 	def gameSetup(self):
