@@ -1,0 +1,33 @@
+option for user to view his points at any time
+clean up code (use inpandval)
+place X on which space needs to talk about the piece, not the inpout letter
+wrong rule: attacker has to choose the tiles openly (defender goes after him knowing how many)
+
+
+
+
+
+
+
+
+v1.1:
+	Now victor message shows which lowest score he won based on (endGame())
+	FIXED: Triggering conflicts message typo
+	FIXED CRITICAL: monument building not awarding tile placement points.
+	FIXED CRITICAL: Now game can handle full ties
+	FIXED CRITICAL: when multiple monuments can be built the while condition now works
+	Listing victors and monument lists is now cleaner
+v1.2:
+	Cleaned unused war variable
+	Now print board is moved to after endturnscoring
+	Implemented Advanced Board
+v1.3:
+	Removed os.system console call to allow for scrolling of console
+	Fixed bug that didn't allow for reprinting board when selecting coords
+	Added ASCII banner
+	Added more color to output
+	FIXED critical bug with not properly recognizing when a leader of the same color moves inside an existing kingdom
+	added fgGet function to be able to set fg to lightblack instead of black
+	fixed bug with monument placement 'proceed' input
+	fixed critical bug where checkLeaders was being called before the catastrophe tile was actually placed
+	code is now even more spaghetti
